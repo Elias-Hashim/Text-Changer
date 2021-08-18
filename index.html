@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Text Changing App </h1>
+    <form action="GET" id="myForm"> 
+        Change The Text To: <input id="msginput" type="text">
+    </form>
+    <button id="btn" onclick="myFunction()"> Change Text </button>
+    <h2 id="msg"> hi  </h2>
+    <script>
+        function myFunction() {
+        msginput = document.getElementById('msginput')
+        document.getElementById("msg").innerHTML = msginput.value;
+        msginput.value = ''
+    };
+    </script>
+</body>
+</html>
